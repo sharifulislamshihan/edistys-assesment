@@ -30,7 +30,7 @@ const FutureOfFinance = () => {
                 {/* First Feature */}
                 <div className="grid md:grid-cols-2 gap-20 items-center mb-20">
                     <div>
-                        <div className="text-lg font-heading font-bold text-[#1f80f0] mb-6 uppercase tracking-wider">Powering the future of finance</div>
+                        <h2 className="text-lg font-heading font-bold text-[#1f80f0] mb-6 uppercase tracking-wider">Powering the future of finance</h2>
                         <h2 className="text-3xl md:text-4xl lg:text-6xl text-[#0b305b] font-semibold font-heading mb-8">Uncovering new ways to delight customers</h2>
 
 
