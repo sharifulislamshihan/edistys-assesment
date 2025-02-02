@@ -1,3 +1,4 @@
+import { NumberTicker } from "@/components/ui/number-ticker";
 
 const StateSection = () => {
     return (
@@ -8,17 +9,33 @@ const StateSection = () => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 text-center mb-16 mx-10">
                     <div className="flex flex-row justify-between lg:flex-col items-center">
-                        <div className=" text-6xl md:text-8xl font-heading font-bold text-blue-600 mb-2">{">"}20</div>
+                        <div className=" text-6xl md:text-8xl font-heading font-bold text-blue-600 mb-2">{">"}
+                            <NumberTicker
+                                value={20}
+                                className="text-6xl md:text-8xl font-heading font-bold text-blue-600 mb-2"
+                            />
+                        </div>
+
                         <div className="text-gray-800 font-paragraph text-xl font-medium my-5">Years of Experience</div>
                     </div>
                     <div class="w-full border-t border-blue-500 border-dashed lg:hidden"></div>
                     <div className="flex flex-row justify-between lg:flex-col items-center">
-                        <div className="text-6xl md:text-8xl font-heading font-bold text-blue-600 mb-2">40+</div>
+                        <div className="text-6xl md:text-8xl font-heading font-bold text-blue-600 mb-2">
+                            <NumberTicker
+                                value={40}
+                                className="text-6xl md:text-8xl font-heading font-bold text-blue-600 mb-2"
+                            />
+                            {'+'}</div>
+
                         <div className="text-gray-800 font-paragraph text-xl font-medium my-5">Financial institutions</div>
                     </div>
                     <div class="w-full border-t border-blue-500 border-dashed lg:hidden"></div>
                     <div className="flex flex-row justify-between lg:flex-col items-center">
-                        <div className="text-6xl md:text-8xl font-heading font-bold text-blue-600 mb-2">{">"}200m</div>
+                        <div className="text-6xl md:text-7xl font-heading font-bold text-blue-600 mb-2">{">"}
+                            <NumberTicker
+                                value={200}
+                                className="text-6xl md:text-7xl font-heading font-bold text-blue-600 mb-2"
+                            />m</div>
                         <div className="text-gray-800 font-paragraph text-xl font-medium my-5">Customers Each</div>
                     </div>
                     <div class="w-full border-t border-blue-500 border-dashed lg:hidden"></div>
