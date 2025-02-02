@@ -82,7 +82,7 @@ const Finance = () => {
             </div>
 
             {/* Carousel */}
-            <div className="relative mx-8 mb-10 w-full h-[400px] md:h-[450px] lg:h-[500px] overflow-hidden">
+            <div className="relative mx-8 mb-10 w-full h-[400px] md:h-[800px] lg:h-[500px] overflow-hidden shadow-lg rounded-xl">
                 <div className="flex transition-transform duration-500 ease-in-out ">
                     {data.map((item, index) => (
                         <div
@@ -90,29 +90,29 @@ const Finance = () => {
                             className={`w-full absolute transition-opacity duration-500 ${currentIndex === index ? "opacity-100" : "opacity-0"
                                 }`}
                         >
-                            <div className="grid grid-cols-2 gap-8 items-center shadow-lg rounded-xl h-fixed px-8 py-12 bg-white">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center shadow-lg rounded-xl h-fixed px-8 py-12 bg-white">
                                 {/* Text Content */}
                                 <div>
-                                    <h4 className="text-blue-500 font-heading font-bold uppercase mb-7">
+                                    <h4 className="text-blue-500 font-heading font-bold uppercase mb-3 lg:mb-7">
                                         {item.subtitle}
                                     </h4>
-                                    <h2 className="text-5xl font-heading font-semibold text-gray-900 mt-2 mb-7">
+                                    <h2 className="text-4xl lg:text-5xl font-heading font-semibold text-gray-900 mb-3 lg:mb-7">
                                         {item.title}
                                     </h2>
-                                    <p className="text-gray-600 mt-4 font-paragraph font-bold text-lg mb-5"> 
+                                    <p className="text-gray-600 mt-4 font-paragraph font-bold text-md md:text-lg mb-3 lg:mb-7">
                                         {item.description}
                                     </p>
-                                    <p className="text-gray-600 mt-4 font-paragraph font-semibold text-md mb-5">{item.extra}</p>
+                                    <p className="text-gray-600 mt-4 font-paragraph font-semibold text-sm lg:text-md mb-5">{item.extra}</p>
                                 </div>
 
                                 {/* Image */}
-                                <div>
+                                <div className=" w-full flex justify-center pb-5">
                                     <Image
                                         src={item.image}
                                         alt={item.title}
                                         width={500}
                                         height={500}
-                                        className="rounded-lg shadow-md"
+                                        className="w-[250px] h-auto sm:w-[350px] md:w-[658px] lg:w-[490px] lg:h-[425px] rounded-lg object-cover pb-7"
                                     />
                                 </div>
                             </div>

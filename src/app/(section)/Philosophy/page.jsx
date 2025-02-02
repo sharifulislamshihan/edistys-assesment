@@ -66,6 +66,28 @@ const Philosophy = () => {
                 <h2 className="text-lg font-heading font-bold text-[#1f80f0] mb-6 uppercase tracking-wider">OUR PHILOSOPHY</h2>
                 <h2 className="text-3xl md:text-6xl text-[#0b305b] font-bold mb-12">Human-centred innovation</h2>
 
+                {/* image for desktop and tab view */}
+                <div className='mx-10 my-10 hidden md:block'>
+                    <Image
+                        src="/desk.png"
+                        alt="Philosophy"
+                        width={2000}
+                        height={500}
+                        class='w-full h-full object-cover'
+                    />
+                </div>
+
+                {/* image for mobile view */}
+                <div className='mx-10 my-10 block md:hidden'>
+                    <Image
+                        src="/mob.png"
+                        alt="Philosophy"
+                        width={2000}
+                        height={500}
+                    />
+                </div>
+
+
                 {/* Carousel for mobile screens */}
                 <div className="block md:hidden mx-8">
                     <Swiper
