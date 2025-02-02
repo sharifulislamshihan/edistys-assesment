@@ -90,15 +90,28 @@ const Finance = () => {
                             className={`w-full absolute transition-opacity duration-500 ${currentIndex === index ? "opacity-100" : "opacity-0"
                                 }`}
                         >
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center shadow-lg rounded-xl h-fixed px-8 py-12 bg-white">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center shadow-lg rounded-xl h-fixed px-8 py-12 mx-auto">
                                 {/* Text Content */}
                                 <div>
                                     <h4 className="text-blue-500 font-heading font-bold uppercase mb-3 lg:mb-7">
                                         {item.subtitle}
                                     </h4>
-                                    <h2 className="text-4xl lg:text-5xl font-heading font-semibold text-gray-900 mb-3 lg:mb-7">
+                                    <h2 className=" text-2xl md:text-4xl lg:text-5xl font-heading font-semibold text-gray-900 mb-3 lg:mb-7">
                                         {item.title}
                                     </h2>
+
+                                    {/* Image for mobile view */}
+                                <div className=" w-full flex justify-center pb-5 sm:block md:hidden">
+                                    <Image
+                                        src={item.image}
+                                        alt={item.title}
+                                        width={500}
+                                        height={500}
+                                        className="w-[250px] h-auto sm:w-[350px] rounded-lg object-cover pb-7"
+                                    />
+                                </div>
+
+
                                     <p className="text-gray-600 mt-4 font-paragraph font-bold text-md md:text-lg mb-3 lg:mb-7">
                                         {item.description}
                                     </p>
@@ -106,7 +119,7 @@ const Finance = () => {
                                 </div>
 
                                 {/* Image */}
-                                <div className=" w-full flex justify-center pb-5">
+                                <div className=" w-full flex justify-center pb-5 sm:hidden md:block">
                                     <Image
                                         src={item.image}
                                         alt={item.title}
