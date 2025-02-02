@@ -90,7 +90,7 @@ const Finance = () => {
                             className={`w-full absolute transition-opacity duration-500 ${currentIndex === index ? "opacity-100" : "opacity-0"
                                 }`}
                         >
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center shadow-lg rounded-xl h-fixed px-8 py-12 mx-auto">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center shadow-lg rounded-xl h-fixed px-8 py-12">
                                 {/* Text Content */}
                                 <div>
                                     <h4 className="text-blue-500 font-heading font-bold uppercase mb-3 lg:mb-7">
